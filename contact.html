@@ -14,7 +14,6 @@
 		<header>
 			<!--Adding navbar-->
 			<nav class="navbar">
-				</a>
 				<div class="content">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -27,34 +26,37 @@
 			</nav>
 		</header><!--End of navbar and header-->
 		<!--Basic feedback text-->
-		<h2>Give Feedback to Our Website.</h2>
-		<!--Start of form where mailto opens up the users email-->
-    	<form action="mailto:srenish108@gmail.com" method="get">
-      		<div>
-        		<label for="first_name">First name:
-          	<input type="text" name="first_name" id="first_name" />
-        		</label>
-      		</div><br>
-      		<div>
-        		<label for="last_name">Last name:
-          	<input type="text" name="last_name" id="last_name" />
-        		</label>
-      		</div><br>
-      		<div>
-        		<label for="email">Email:
-          	<input type="text" name="email" id="email" />
-        		</label>
-      		</div><br>
-      		<!--Section for comment/feedback-->
-      		<div>
-        		<label>Comments:</label>
-        		<br />
-        		<textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
-      		</div>
-      		<div>
-        		<input type="submit" name="submit" value="Send" />
-        		<input type="reset" name="reset" value="Clear Form" />
-      		</div>
+		<div class="Feedback">
+			<h1>Contact Us</h1>
+			<h2>Give Feedback to Our Website.</h2>	
+			<!--Start of form where mailto opens up the users email-->
+	    	<form action="mailto:srenish108@gmail.com" method="get">
+	      		<div>
+	        		<label for="first_name">First name:<br>
+	          	<input type="text" class="contact-form" name="first_name" id="first_name" />
+	        		</label>
+	      		</div><br>
+	      		<div>
+	        		<label for="last_name">Last name:<br>
+	          	<input type="text" class="contact-form" name="last_name" id="last_name" />
+	        		</label>
+	      		</div><br>
+	      		<div>
+	        		<label for="email">Email:<br>
+	          	<input type="text" class="contact-form" name="email" id="email" />
+	        		</label>
+	      		</div><br>
+	      		<!--Section for comment/feedback-->
+	      		<div>
+	        		<label>Comments:</label>
+	        		<br />
+	        		<textarea name="comments" rows="12" cols="35" class="contact-form">Send your comments to us.</textarea>
+	      		</div>
+	      		<div>
+	        		<input type="submit" name="submit" value="Send" />
+	        		<input type="reset" name="reset" value="Clear Form" />
+	      		</div>
+      	</div>
     	</form><!--End of form-->
 	</body><!--End of our body-->
 </html>

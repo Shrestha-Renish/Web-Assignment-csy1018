@@ -1,0 +1,211 @@
+/*CSS For every html file*/
+*{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*CSS of responsive nav bar for all html files*/
+.navbar{
+	overflow: hidden;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+	width: 100%;
+	top: 0;
+}
+
+.Brand{
+	font-size: 20px;
+	margin: 10px;
+}
+
+.navbar-links{
+	height: 100%;
+}
+
+.navbar-links ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+.navbar-links li{
+	list-style: none;
+}
+
+.navbar-links li a{
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	display: block;
+}
+
+.navbar-links li:hover {
+	background-color: #5555;
+	transition: .5s;
+}
+
+.toggle-button{
+	position: fixed;
+	/*right: 2rem;*/
+	top: .7rem;
+	/*bottom: 2rem;*/
+	left: 28.7rem;
+	flex-direction: column;
+	display: none;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+}
+
+.toggle-button .bar{
+	height:4px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+/*Media Query for making a responsive nav bar*/
+@media screen and (max-width:550px){
+	.toggle-button{
+		display: flex;
+	}
+	.navbar-links{
+		display: none;
+		width: 100%;
+	}
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+		position: fixed;
+	}
+	.navbar-links ul{
+		flex-direction: column;
+		width: 100%;
+	}
+	.navbar-links li{
+		text-align: center;
+	}
+	.navbar-links li a{
+		padding: .5rem 1rem;
+	}
+	.navbar-links.active{
+		display: flex;
+	}
+}
+
+/*CSS For Index.html file*/
+.main{
+	background-image: url(Images/portfolio.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.text{
+	/*padding-top: 10%;
+	padding-left: 5%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	text-align: left;*/
+	color: #64ede7f2;
+	padding-top: 20%;
+	text-align: center;
+}
+
+/*CSS FOR Portfolio.html FILE*/
+.BG{
+	background-image: url(Images/Theater.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.PH{
+	text-align: center;
+	font-family: helvetica;
+	padding-top: 5%;
+	color: white;
+}
+
+.row {
+	margin: 8px -16px;
+}
+
+/* Adding padding between each column */
+.row,
+.row > .column {
+	padding: 18px;
+}
+
+/* Creating four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Content */
+.subs {
+	background-color: black;
+	padding: 10px;
+}
+
+.style{
+	width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*CSS For Contact.html*/
+.contact{
+	background-image: url(Images/Back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.Feedback{
+	padding: 5%;
+	text-align: center;
+}
+
+.contact-form:hover{
+	box-shadow: 0px 0px 0px 4px lightblue;
+	transition: 1s;
+}
+
+textarea.contact-form{
+	resize: none;
+	height: 130px;
+}

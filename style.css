@@ -4,103 +4,70 @@
 	padding: 0;	
 	box-sizing: border-box;
 }
-body{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+
+/*CSS of responsive nav bar with hamburger icon for all html files*/
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
-/*CSS of responsive nav bar for all html files*/
-.navbar{
-	overflow: hidden;
-	display: flex;
-	position: fixed;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	color: white;
-	width: 100%;
-	top: 0;
+.navigation a{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 28px;
 }
-
-.Brand{
-	font-size: 20px;
-	margin: 10px;
+.navigation a:hover{
+    background-color: white;
+    color: black;
+    transition: .8s;
 }
-
-.navbar-links{
-	height: 100%;
+#toggle{
+    display: none;
 }
-
-.navbar-links ul{
-	margin: 0px;
-	padding: 0px;
-	display: flex;
+.togglearea{
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
-
-.navbar-links li{
-	list-style: none;
+.togglearea label{
+    background-color: white;
+    height: 45px;
+    width: 50px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.navbar-links li a{
-	text-decoration: none;
-	color: white;
-	padding: 1rem;
-	display: block;
+.togglearea label span{
+    background-color: black;
+    height: 4px;
+    width: 70%;
+    margin: 2px 0px;
 }
-
-.navbar-links li:hover {
-	background-color: #5555;
-	transition: .5s;
+.togglearea{
+    display: none;
 }
-
-.toggle-button{
-	position: fixed;
-	/*right: 2rem;*/
-	top: .7rem;
-	/*bottom: 2rem;*/
-	left: 28.7rem;
-	flex-direction: column;
-	display: none;
-	justify-content: space-between;
-	width: 30px;
-	height: 20px;
-}
-
-.toggle-button .bar{
-	height:4px;
-	width: 100%;
-	background-color: white;
-	border-radius: 10px;
-}
-
 /*Media Query for making a responsive nav bar*/
-@media screen and (max-width:550px){
-	.toggle-button{
-		display: flex;
-	}
-	.navbar-links{
-		display: none;
-		width: 100%;
-	}
-	.navbar{
-		flex-direction: column;
-		align-items: flex-start;
-		position: fixed;
-	}
-	.navbar-links ul{
-		flex-direction: column;
-		width: 100%;
-	}
-	.navbar-links li{
-		text-align: center;
-	}
-	.navbar-links li a{
-		padding: .5rem 1rem;
-	}
-	.navbar-links.active{
-		display: flex;
+@media screen and (max-width: 500px){
+    .navigation{
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked + .navigation{
+        display: flex;
+    }
+    .togglearea{
+    display: flex;
 	}
 }
 
@@ -114,11 +81,6 @@ body{
 }
 
 .text{
-	/*padding-top: 10%;
-	padding-left: 5%;
-	color: white;
-	font-family: 'Poppins', sans-serif;
-	text-align: left;*/
 	color: #64ede7f2;
 	padding-top: 20%;
 	text-align: center;

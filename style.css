@@ -58,7 +58,7 @@
     display: none;
 }
 /*Media Query for making a responsive nav bar*/
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
     .navigation{
         flex-direction: column;
         display: none;
@@ -81,9 +81,11 @@
 }
 
 .text{
-	color: #64ede7f2;
-	padding-top: 20%;
-	text-align: center;
+	color: white;
+	padding-top: 10%;
+    padding-left: 20px;
+	text-align: left;
+    font-size: 40px;
 }
 
 /*CSS FOR Portfolio.html FILE*/
@@ -97,7 +99,6 @@
 
 .PH{
 	text-align: center;
-	font-family: helvetica;
 	padding-top: 5%;
 	color: white;
 }
@@ -109,7 +110,7 @@
 /* Adding padding between each column */
 .row,
 .row > .column {
-	padding: 18px;
+	padding: 16px;
 }
 
 /* Creating four equal columns that floats next to each other */
@@ -162,6 +163,10 @@
 	text-align: center;
 }
 
+.contain{
+    text-align: center;
+}
+
 .contact-form:hover{
 	box-shadow: 0px 0px 0px 4px lightblue;
 	transition: 1s;
@@ -170,4 +175,135 @@
 textarea.contact-form{
 	resize: none;
 	height: 130px;
+}
+
+/*Media Query for Contact.html*/
+
+@media screen and (max-width: 1100px){
+    .Feedback{
+        padding-top: 15%
+    }
+}
+
+/*CSS For CV.html*/
+.Vita{
+    background-color: skyblue;
+}
+
+.cvimg{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    background: #fff;
+}
+
+.wrapper .left{
+    width: 35%;
+    background: #26252d;
+}
+
+.wrapper .left .resume_image{
+    width: 100%;
+}
+
+.wrapper .left .resume_image img{
+    width: 100%;
+    display: block;
+}
+
+.wrapper .resume_title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.wrapper .left .resume_info{
+    color: #84838b;
+}
+
+.wrapper .left .resume_bottom{
+    padding: 20px 30px;
+}
+
+.wrapper .resume_item{
+    padding: 20px 0;
+    border-bottom: 1px solid #0175b2;
+}
+
+.wrapper  .resume_item:last-child{
+    border-bottom: 0;
+}
+
+.wrapper .left .resume_namerole{
+    display: none;
+}
+
+.wrapper .resume_namerole .name{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+
+.wrapper .left .resume_namerole .role{
+    color: #84838b;
+}
+
+.wrapper .left .resume_contact .resume_info:last-child{
+     margin-top: 10px;
+}
+
+.wrapper .left .resume_contact .resume_subtitle{
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.wrapper .right{
+    width: 65%;
+    padding: 20px 40px;
+    color: #26252d;
+}
+
+.wrapper .right .resume_namerole .name{
+    color: #26252d;
+    font-size: 32px;
+}
+
+.wrapper .right .resume_namerole .role{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.wrapper .right .resume_item .resume_title{
+    color: #26252d;
+}
+
+/*Media Query for CV.html*/
+
+@media screen and (max-width: 1100px){
+    .wrapper .right .resume_namerole{
+        display: none;
+    }
+    .wrapper .left .resume_namerole{
+        display: block;
+    }
+    .wrapper{
+        width: 95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .wrapper .left,
+    .wrapper .right{
+        width: 100%;
+    }
 }

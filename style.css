@@ -90,7 +90,8 @@
 
 /*CSS FOR Portfolio.html FILE*/
 .BG{
-	background-image: url(Images/Theater.jpg);
+	background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -128,7 +129,7 @@
 
 /* Content */
 .subs {
-	background-color: black;
+	background-color: lightblue;
 	padding: 10px;
 }
 
@@ -136,7 +137,7 @@
 	width: 100%;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 50%;
   }
@@ -307,3 +308,120 @@ textarea.contact-form{
         width: 100%;
     }
 }
+
+/*CSS for Sitereport.html*/
+
+.site{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.head{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Objectives{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Experience{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+.design{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.create{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.validation{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Progress{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.reference{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.conclusion{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.val_images{
+    display: flex;
+    flex-direction: row;
+}
+
+.val_images img{
+    width: 200px;
+    height: 150px;
+    margin: 10px 10px;
+}
+
+.prog_img{
+    display: flex;
+}
+
+.prog_img img{
+    width: 200px;
+    height: 150px;
+    margin: 10px 10px;
+}
+
+/*Media Query for Sitereport.html*/
+
+@media screen and (max-width: 500px){
+    .site{
+        width: 100%;
+    }
+
+    .val_images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prog_img{
+        display: flex;
+        flex-direction: column;
+    }
+    .val_images img{
+        width: 200px;
+        height: 150px;
+        margin: 10px 10px;
+    }
+
+    .val_images img{
+        width: 200px;
+        height: 150px;
+        margin: 10px 10px;
+    }
+}
+/*End of CSS*/
